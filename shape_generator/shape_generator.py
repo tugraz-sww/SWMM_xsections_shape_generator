@@ -101,7 +101,7 @@ class CrossSection(object):
             str: filename
 
         """
-        file = path.join(self.working_directory, '{}'.format(self.label))
+        file = path.join(self.working_directory, str(self.label))
         if self.add_dim:
             file += '_{:0.0f}'.format(self.height)
             if self.width:
